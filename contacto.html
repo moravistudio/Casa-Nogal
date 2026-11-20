@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto y cotizaciones | Casa Nogal</title>
+<meta name="description" content="Escríbenos para consultar un producto, pedir una cotización o decorar un ambiente completo. Dirección, horario y formulario de contacto.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:title" content="Contacto y cotizaciones | Casa Nogal">
+<meta property="og:description" content="Escríbenos para consultar un producto, pedir una cotización o decorar un ambiente completo.">
+<meta property="og:image" content="https://moravistudio.github.io/Casa-Nogal/img/og-image.jpg">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contacto">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="cabecera"><noscript><nav class="wrap" aria-label="Principal"><a href="index.html">Inicio</a> · <a href="tienda.html">Tienda</a> · <a href="colecciones.html">Colecciones</a> · <a href="nosotros.html">Nosotros</a> · <a href="contacto.html">Contacto</a></nav></noscript></div>
+
+<main id="contenido">
+
+  <section class="wrap cabecera-pagina" aria-labelledby="titulo-pagina">
+    <p class="migas"><a href="index.html">Inicio</a> &nbsp;/&nbsp; <span aria-current="page">Contacto</span></p>
+    <div class="cabecera-pagina__marco">
+      <p class="script">Hablemos de tu espacio</p>
+      <h1 id="titulo-pagina">Contacto</h1>
+    </div>
+  </section>
+
+  <div class="wrap contacto">
+    <div class="datos">
+      <div class="datos__bloque"><span class="datos__t">Showroom</span><span class="datos__v"><span data-cfg="direccion">Av. Arequipa 1234</span><br><span data-cfg="distrito">Miraflores, Lima</span></span></div>
+      <div class="datos__bloque"><span class="datos__t">Horario</span><span class="datos__v"><span data-cfg="horarioSemana">Lunes a sábado · 9:00 a. m. – 7:00 p. m.</span><br><span data-cfg="horarioDomingo">Domingos · 10:00 a. m. – 2:00 p. m.</span></span></div>
+      <div class="datos__bloque"><span class="datos__t">Escríbenos</span><span class="datos__v"><span data-cfg="telefono">+51 987 654 321</span><br><span data-cfg="correo">contacto@tunegocio.com</span></span></div>
+      <div class="datos__bloque"><span class="datos__t">Redes</span><span class="datos__v" data-cfg="redes">@casanogal en Instagram, Facebook y TikTok</span></div>
+    </div>
+
+    <form class="formulario" id="form-contacto" novalidate>
+      <h2>Envíanos un mensaje</h2>
+      <div class="formulario__dos">
+        <div class="campo">
+          <label for="c-nombre">Nombre</label>
+          <input id="c-nombre" type="text" name="nombre" autocomplete="name" aria-describedby="e-nombre">
+          <span class="campo__error" id="e-nombre" data-error-de="nombre"></span>
+        </div>
+        <div class="campo">
+          <label for="c-telefono">Teléfono</label>
+          <input id="c-telefono" type="tel" name="telefono" autocomplete="tel" aria-describedby="e-telefono">
+          <span class="campo__error" id="e-telefono" data-error-de="telefono"></span>
+        </div>
+      </div>
+      <div class="campo">
+        <label for="c-correo">Correo electrónico</label>
+        <input id="c-correo" type="email" name="correo" autocomplete="email" aria-describedby="e-correo">
+        <span class="campo__error" id="e-correo" data-error-de="correo"></span>
+      </div>
+      <div class="campo">
+        <label for="c-interes">¿Qué te interesa?</label>
+        <select id="c-interes" name="interes">
+          <option value="compra">Comprar un producto</option>
+          <option value="medida">Cotizar un mueble a medida</option>
+          <option value="ambiente">Decorar un ambiente completo</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="c-mensaje">Mensaje</label>
+        <textarea id="c-mensaje" name="mensaje" rows="4" aria-describedby="e-mensaje"></textarea>
+        <span class="campo__error" id="e-mensaje" data-error-de="mensaje"></span>
+      </div>
+      <button type="submit" class="btn btn--dorado">Enviar mensaje <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="estado" role="status"></p>
+    </form>
+  </div>
+
+  <section class="wrap seccion" aria-label="Ubicación">
+    <!-- Para cambiar la dirección del mapa: edita el texto después de q= en el src (usa + en lugar de espacios). -->
+    <div class="mapa">
+      <iframe title="Mapa de Google Maps con la ubicación del showroom" src="https://www.google.com/maps?q=Av.+Arequipa+1234,+Miraflores,+Lima&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </section>
+
+</main>
+
+<div id="pie"></div>
+<script src="js/productos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

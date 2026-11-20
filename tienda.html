@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tienda de muebles y decoración | Casa Nogal</title>
+<meta name="description" content="Explora sofás, comedores, camas, lámparas y decoración. Filtra por categoría, ambiente y precio, y consulta el producto que te interesa.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:title" content="Tienda de muebles y decoración | Casa Nogal">
+<meta property="og:description" content="Explora sofás, comedores, camas, lámparas y decoración. Filtra por categoría, ambiente y precio.">
+<meta property="og:image" content="https://moravistudio.github.io/Casa-Nogal/img/og-image.jpg">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="tienda">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="cabecera"><noscript><nav class="wrap" aria-label="Principal"><a href="index.html">Inicio</a> · <a href="tienda.html">Tienda</a> · <a href="colecciones.html">Colecciones</a> · <a href="nosotros.html">Nosotros</a> · <a href="contacto.html">Contacto</a></nav></noscript></div>
+
+<main id="contenido">
+
+  <section class="wrap cabecera-pagina" aria-labelledby="titulo-pagina">
+    <p class="migas"><a href="index.html">Inicio</a> &nbsp;/&nbsp; <span aria-current="page">Tienda</span></p>
+    <div class="cabecera-pagina__marco">
+      <p class="script">Para cada rincón de tu hogar</p>
+      <h1 id="titulo-pagina">Tienda</h1>
+    </div>
+  </section>
+
+  <div class="wrap tienda">
+    <aside class="filtros" aria-label="Filtros">
+      <div>
+        <h2 class="filtros__titulo">Categorías</h2>
+        <div class="filtros__cats" id="filtro-categorias"></div>
+      </div>
+      <div class="filtros__selects">
+        <div class="campo">
+          <label for="filtro-ambiente">Ambiente</label>
+          <select id="filtro-ambiente"><option value="">Todos</option></select>
+        </div>
+        <div class="campo">
+          <label for="filtro-precio">Rango de precio</label>
+          <select id="filtro-precio"><option value="">Todos</option></select>
+        </div>
+        <div class="campo filtros__orden">
+          <label for="filtro-orden">Ordenar por</label>
+          <select id="filtro-orden">
+            <option value="">Destacados</option>
+            <option value="menor">Menor precio</option>
+            <option value="mayor">Mayor precio</option>
+            <option value="novedades">Novedades</option>
+          </select>
+        </div>
+      </div>
+    </aside>
+
+    <section aria-label="Productos" style="min-width: 0">
+      <div class="tienda__resumen" aria-live="polite"><span id="resumen"></span><span>Precios en soles (S/)</span></div>
+      <div class="grilla-productos" id="lista-productos"></div>
+      <noscript><p>Para ver los productos activa JavaScript, o <a href="contacto.html">escríbenos</a> y te enviamos el catálogo.</p></noscript>
+    </section>
+  </div>
+
+</main>
+
+<div id="pie"></div>
+<script src="js/productos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
